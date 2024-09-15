@@ -24,17 +24,5 @@ namespace Exempel
             return name;
         }
 
-        static void Main(string[] args)
-        {
-            //Person-objekt
-            Person person = new Person();
-
-            // Sätt namnet
-            person.SetName("Lawko");
-
-            // Skriv ut namnet 
-            Console.WriteLine("Personens namn är: " + person.GetName());
-        }
-    }
 
 }
