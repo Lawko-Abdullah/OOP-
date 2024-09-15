@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace Exempel
 {
-    class Fordon
+    abstract class Fordon
     {
-        protected string namn;
+        public string namn;
 
         public Fordon(string namn)
         {
             this.namn = namn;
         }
 
-        public virtual void Run()
-        {
-            Console.WriteLine($"{namn} fordonet kör iväg.");
-        }
+        public abstract void Run(); // Marked as abstract to enforce implementation in derived classes
     }
 
     class Bil : Fordon
